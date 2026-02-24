@@ -1,0 +1,18 @@
+{
+  "todos": [
+    {
+      "id": "af36a0a6-1530-4591-b5c4-95f99a179cb4",
+      "title": "Test throw insomnia",
+      "description": "If you see me, I was added.",
+      "isDone": false,
+      "createdAt": "2026-02-24T17:46:15.526Z"
+    },
+    {
+      "id": "2ec9e42d-0a9c-4729-aef7-d3cd5bd33135",
+      "title": "No title",
+      "description": "If you see me, I was added.",
+      "isDone": false,
+      "createdAt": "2026-02-24T17:51:03.090Z"
+    }
+  ]
+}
