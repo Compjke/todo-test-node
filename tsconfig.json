@@ -6,14 +6,10 @@
     "strict": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-
     "outDir": "./dist",
     "rootDir": "./src",
-
     "baseUrl": "./src",
-    "paths": {
-      "@/*": ["*"]
-    }
+   
   },
 
   "include": ["src"],

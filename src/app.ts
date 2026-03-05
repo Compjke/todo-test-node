@@ -1,4 +1,4 @@
-import { connectToDb } from '@/config/connectDb.js';
+import { connectToDb } from './config/connectDb.js';
 import cors from 'cors';
 import 'dotenv/config';
 import express from 'express';

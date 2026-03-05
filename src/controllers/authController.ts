@@ -1,4 +1,4 @@
-import { UserModel } from '@/models/User.js';
+import { UserModel } from '../models/User.js';
 import bcrypt from 'bcryptjs';
 import { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
