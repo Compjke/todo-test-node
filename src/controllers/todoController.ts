@@ -1,8 +1,8 @@
-import { toObjectId } from '@/utils/toMongoObjectId';
+import { toObjectId } from '@/utils/toMongoObjectId.js';
 import { Request, Response } from 'express';
 import { Types } from 'mongoose';
-import { Todo as TodoModel } from '../models/Todo';
-import { Todo } from './types';
+import { Todo as TodoModel } from '../models/Todo.js';
+import { Todo } from './types.js';
 
 export const getAllTodos = async (req: Request, res: Response) => {
   const status = req.query.status as string | undefined;
@@ -88,7 +88,6 @@ export const updateTodo = async (req: Request, res: Response) => {
     return res.status(400).json({ error: 'Invalid todo id' });
   }
   if (
-    
     title === undefined &&
     description === undefined &&
     typeof isDone !== 'boolean'

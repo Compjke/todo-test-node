@@ -1,12 +1,12 @@
-import { connectToDb } from '@/config/connectDb';
+import { connectToDb } from '@/config/connectDb.js';
 import cors from 'cors';
 import 'dotenv/config';
 import express from 'express';
 import rateLimit from 'express-rate-limit';
 import helmet from 'helmet';
-import authRoutes from './routes/authRoutes';
-import todoRoutes from './routes/todoRoutes';
-import translationRoutes from './routes/translationRoutes';
+import authRoutes from './routes/authRoutes.js';
+import todoRoutes from './routes/todoRoutes.js';
+import translationRoutes from './routes/translationRoutes.js';
 
 const PORT = process.env.PORT || 3000;
 
