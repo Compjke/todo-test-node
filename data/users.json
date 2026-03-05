@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "fa9f38db-cec5-4b3a-b377-035216f2fd19",
+      "userName": "Kolya",
+      "password": "$2b$10$NluUm4ICCW5IFzRixPGVpe1XLSvf2hMoiuAZ4TYmOR5rK8w3rHr5S",
+      "createdAt": "2026-02-25T12:32:27.260Z"
+    },
+    {
+      "id": "7a4dae69-cf30-40bd-8d6f-7f815812a3c4",
+      "userName": "Igor",
+      "password": "$2b$10$oUDIVoci8V2wd0DI9NRcBeLbdPBULD5J.4gFvGPKqjkgWmp9dCfJ2",
+      "createdAt": "2026-02-25T12:33:09.043Z"
+    }
+  ]
+}

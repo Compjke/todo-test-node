@@ -1,0 +1,19 @@
+{
+  "title": "Simple TODO App",
+  "add": "Add",
+  "all": "All",
+  "active": "Active",
+  "completed": "Completed",
+  "noTodos": "No todos yet",
+  "error": "Error: {{message}}",
+  "login": "Login",
+  "register": "Register",
+  "username": "Username",
+  "password": "Password",
+  "confirmPassword": "Confirm password",
+  "createAccount" : "Create account",
+  "logout": "Logout",
+  "hello": "Hello, <0>{{name}}</0>",
+  "todoTitle" : "Title",
+  "description" : "Description"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Проста TODO Додаток",
+  "add": "Додати",
+  "all": "Усі",
+  "active": "Активні",
+  "completed": "Завершені",
+  "noTodos": "Ще немає задач",
+  "error": "Помилка: {{message}}",
+  "login": "Увійти",
+  "register": "Зареєструватися",
+  "username": "Ім'я користувача",
+  "password": "Пароль",
+  "confirmPassword": "Підтвердити пароль",
+  "createAccount": "Створити аккаунт",
+  "logout": "Вийти",
+  "hello": "Привіт , <0>{{name}}</0>",
+  "todoTitle": "Назва",
+  "description": "Опис"
+}

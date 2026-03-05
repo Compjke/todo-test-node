@@ -1,0 +1,39 @@
+import { connectToDb } from '@/config/connectDb';
+import cors from 'cors';
+import 'dotenv/config';
+import express from 'express';
+import rateLimit from 'express-rate-limit';
+import helmet from 'helmet';
+import authRoutes from './routes/authRoutes';
+import todoRoutes from './routes/todoRoutes';
+import translationRoutes from './routes/translationRoutes';
+
+const PORT = process.env.PORT || 3000;
+
+const app = express();
+app.use(helmet());
+app.use(express.json());
+app.use(cors({ origin: '*' }));
+const authLimiter = rateLimit({
+  windowMs: 10000,
+  max: 5,
+  message: { error: 'Too many requests, try again later' },
+  standardHeaders: true,
+  legacyHeaders: false,
+});
+
+app.use('/auth/login', authLimiter);
+app.use('/auth/register', authLimiter);
+
+app.get('/', (_, res) => {
+  res.send('hello TODO API');
+});
+
+app.use('/todos', todoRoutes);
+app.use('/auth', authRoutes);
+app.use('/translation', translationRoutes);
+connectToDb();
+
+app.listen(PORT, () => {
+  console.log(`Server works ✔ on http://localhost:${PORT}`);
+});
