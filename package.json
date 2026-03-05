@@ -4,8 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "build": "tsc && npm run copy-locales",
+    "copy-locales": "cpx \"src/locales/**/*\" dist/locales",
     "start": "node ./dist/app.js",
-    "build": "tsc",
     "dev": "nodemon --exec tsx ./src/app.ts",
     "prepare": "husky"
   },
@@ -29,6 +30,7 @@
     "@types/express": "^5.0.6",
     "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^25.3.0",
+    "cpx": "^1.5.0",
     "eslint": "^9.39.3",
     "eslint-plugin-import": "^2.32.0",
     "globals": "^17.3.0",
