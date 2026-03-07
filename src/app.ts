@@ -11,12 +11,18 @@ import translationRoutes from './routes/translationRoutes.js';
 const PORT = process.env.PORT || 3000;
 
 const app = express();
+app.set('trust proxy', 1);
 app.use(helmet());
 app.use(express.json());
-app.use(cors({
-  origin: ['https://todo-react-for-node-js.vercel.app', 'http://localhost:5173'],
-  credentials: true,
-}));
+app.use(
+  cors({
+    origin: [
+      'https://todo-react-for-node-js.vercel.app',
+      'http://localhost:5173',
+    ],
+    credentials: true,
+  }),
+);
 const authLimiter = rateLimit({
   windowMs: 10000,
   max: 5,
